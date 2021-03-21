@@ -15,4 +15,8 @@
       <Compile Remove="Data\Persistence\PersonPersistence.cs" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    </ItemGroup>
+
 </Project>

@@ -12,7 +12,7 @@ namespace FileData
         public IList<Adult> Adults { get;  private set; }
 
         private readonly string familiesFile = "families.json";
-        private readonly string adultsFile = "C:/Users/alin/Desktop/Dnp/BlazorAssignment/BlazorAssignment/Data/adults.json";
+        private readonly string adultsFile = "adults.json";
 
         public FileContext()
         {

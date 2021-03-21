@@ -31,9 +31,22 @@ namespace BlazorAssignment.Pages
 
         public void Edit(int id)
         {
-            _navigationManager.NavigateTo($"adult/{id.ToString()}");
+            _navigationManager.NavigateTo($"adult/{id}");
+        }
+        public void View(int id)
+        {
+            _navigationManager.NavigateTo($"adultView/{id}");
         }
 
+        public void Add() {
+            _navigationManager.NavigateTo($"adult");
+        }
+        public void Delete(int id)
+        {
+            _adultList.Remove(_adultList.FirstOrDefault(x => x.Id == id));
+            FileContextProvider.SaveChanges();
+
+        }
         private async Task Search()
         {
             var lowerCaseFieldValue = _searchInputVal.ToLower();
@@ -41,11 +54,6 @@ namespace BlazorAssignment.Pages
                                                            || adult.LastName.ToLower().Contains(lowerCaseFieldValue)).ToList();
             await InvokeAsync(() => StateHasChanged())
                 .ConfigureAwait(false);
-        }
-
-        public void Delete()
-        {
-            
         }
         
 

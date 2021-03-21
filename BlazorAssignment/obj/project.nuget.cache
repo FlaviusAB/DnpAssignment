@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "o0pw19lE8gqlQg0SsaeQeyIPwfuVnVI8AAdMXWvAJXH7xnmsSZ8Wm5HyPVNXabR8IRNEwbVSQ16eq2tple8jPQ==",
+  "dgSpecHash": "NBw2TXbMZhlLZCu8iECBZEK/KSJtAMRc1R8NX3377ww0B90bPnoErWr/MtdwWGQToikwjg7cjM90U0Xo4HxOwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alin\\Desktop\\Dnp\\BlazorAssignment\\BlazorAssignment\\BlazorAssignment.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Alin Assignment\\DnpAssignment\\BlazorAssignment\\BlazorAssignment.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alexandru\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
