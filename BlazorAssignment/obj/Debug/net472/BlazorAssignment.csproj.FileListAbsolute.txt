@@ -1,0 +1,4 @@
+C:\Users\alin\Desktop\Dnp\BlazorAssignment\BlazorAssignment\obj\Debug\net472\BlazorAssignment.csprojAssemblyReference.cache
+C:\Users\alin\Desktop\Dnp\BlazorAssignment\BlazorAssignment\obj\Debug\net472\BlazorAssignment.csproj.CoreCompileInputs.cache
+C:\Users\alin\Desktop\Dnp\BlazorAssignment\BlazorAssignment\obj\Debug\net472\BlazorAssignment.AssemblyInfoInputs.cache
+C:\Users\alin\Desktop\Dnp\BlazorAssignment\BlazorAssignment\obj\Debug\net472\BlazorAssignment.AssemblyInfo.cs

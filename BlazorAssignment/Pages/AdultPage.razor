@@ -1,0 +1,18 @@
+﻿@page "/adult/{id}"
+@*@page "/adult/*@"
+<h3>Adult</h3>
+@if (_adultModel != null)
+{
+    <EditForm Model="@_adultModel" OnValidSubmit="@HandleValidSubmit">
+        <InputText id="FirstName" @bind-Value="_adultModel.FirstName" />
+        <InputText id="LastName" @bind-Value="_adultModel.LastName" />
+        <InputText id="HairColor" @bind-Value="_adultModel.HairColor" />
+        <InputText id="EyeColor" @bind-Value="_adultModel.EyeColor" />
+        <InputNumber id="Age" @bind-Value="_adultModel.Age" />
+        <InputNumber id="Weight" @bind-Value="_adultModel.Weight" />
+        <InputNumber id="Height" @bind-Value="_adultModel.Height" />
+        <InputText id="Sex" @bind-Value="_adultModel.Sex" />
+
+        <button type="submit">Submit</button>
+    </EditForm>
+}

@@ -1,0 +1,55 @@
+﻿@page "/adults"
+@using Models
+@using FileData
+<h3> Type a name</h3>
+<div class="d-flex mb-5" style="width: 100%;justify-content: space-between;flex-direction: row">
+       
+    <input  @bind-value="_searchInputVal"
+             class="form-control" type="search" 
+             placeholder="Search" aria-label="Search" 
+             style="border-radius: 20px"/>
+    
+    <button class="btn btn-outline-success ml-2 "
+            type="submit" style="border-radius:20px;width: 150px;"
+            @onclick="Search"
+    >Search</button>
+</div>
+@* <div> *@
+@*     <button class="btn btn-outline-success ml-2 " *@
+@*                 style="border-radius:20px;width: 150px;" *@
+@*                 @onclick="" *@
+@*         >Edit</button> *@
+@* </div> *@
+
+@if (_val )
+{
+    <ul class="list-group">
+        @foreach(var adult in _adultList)
+        {
+            <li class="list-group-item" style="cursor: pointer">
+                <div class="d-flex" style="flex-direction: row; justify-content: space-between; align-items: center">
+                    @adult.FirstName @adult.LastName
+                    <div class="d-flex" style="flex-direction: row">
+                          <button class="btn btn-outline-info btn-sm mr-3" @onclick="@Delete">Delete</button>
+                        <button class="btn btn-outline-info btn-sm" @onclick="() => Edit(adult.Id)">Edit</button>
+                    </div>
+                    
+                </div>
+                
+            </li>
+        }
+    </ul>
+}
+@if (!_val)
+{
+    <ul class="list-group">
+        
+            @for (var x = 1; x < _adultList.Count; x++)
+            {
+                <li class="list-group-item" style="">
+                    @_adultList[@x].FirstName @_adultList[@x].LastName
+                </li>
+            }
+        
+    </ul>
+}
